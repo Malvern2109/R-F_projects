@@ -123,12 +123,12 @@ export default function Footer() {
                   className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors"
                 >
                   <span>✉️</span>
-                  info@rfprojects.co.zw
+                  rfprojects2@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <span>🕐</span>
-                <span className="text-slate-400">Mon – Fri: 8am – 5pm</span>
+                <span className="text-slate-400">Mon – Sat: 8am – 5pm</span>
               </li>
             </ul>
           </div>
