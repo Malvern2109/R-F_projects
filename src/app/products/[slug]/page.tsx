@@ -186,10 +186,10 @@ export default function ProductDetailPage({ params }: Props) {
                   <span>📞</span> +263 778 808 516
                 </p>
                 <p className="flex items-center gap-2">
-                  <span>✉️</span> info@rfprojects.co.zw
+                  <span>✉️</span> rfprojects2@gmail.com
                 </p>
                 <p className="flex items-center gap-2">
-                  <span>🕐</span> Mon – Fri: 8am – 5pm
+                  <span>🕐</span> Mon – Sat: 8am – 5pm
                 </p>
               </div>
             </div>
