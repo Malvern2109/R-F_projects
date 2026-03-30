@@ -5,7 +5,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "About Us | R&f Projects",
   description:
-    "Learn about R&f Projects — a specialist aluminium fabrication company with over a decade of experience delivering premium gates, window frames, and railings.",
+    "Learn about R&f Projects — a specialist aluminium fabrication company with over 6 years of experience delivering premium gates, window frames, and railings.",
 };
 
 const VALUES = [
@@ -42,18 +42,18 @@ const VALUES = [
 ];
 
 const STATS = [
-  { value: "10+",  label: "Years in Business" },
-  { value: "500+", label: "Projects Delivered" },
+  { value: "6+",  label: "Years in Business" },
+  { value: "15+", label: "Projects Delivered" },
   { value: "100%", label: "Aluminium Certified" },
   { value: "24h",  label: "Quote Turnaround" },
 ];
 
 const MILESTONES = [
-  { year: "2014", event: "R&f Projects founded with a small workshop and a big vision." },
-  { year: "2016", event: "Expanded into commercial projects — delivering gates and frames for office complexes." },
-  { year: "2019", event: "Invested in modern CNC cutting equipment, doubling production capacity." },
+  { year: "2018", event: "R&f Projects founded with a small workshop and a big vision." },
+  { year: "2019", event: "Expanded into commercial projects — delivering gates and frames for office complexes." },
+  { year: "2020", event: "Invested in modern CNC cutting equipment, doubling production capacity." },
   { year: "2022", event: "Reached 400+ completed projects across residential and commercial sectors." },
-  { year: "2025", event: "Launched our online presence to better serve clients across Zimbabwe." },
+  { year: "2026", event: "Launched our online presence to better serve clients across Zimbabwe." },
 ];
 
 export default function AboutPage() {
@@ -101,7 +101,7 @@ export default function AboutPage() {
               <p>
                 R&amp;F Projects was founded with a simple belief that aluminium fabrication
                 should combine engineering precision with genuine craftsmanship. Over the past
-                decade, we have grown from a small workshop into one of Zimbabwe&apos;s trusted
+                6 years, we have grown from a small workshop into one of Zimbabwe&apos;s trusted
                 aluminium manufacturers.
               </p>
               <p>
