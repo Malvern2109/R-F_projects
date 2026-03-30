@@ -78,7 +78,7 @@ export default function WhyUs() {
             </h2>
           </div>
           <p className="text-slate-400 leading-relaxed max-w-md lg:ml-auto">
-            We&apos;ve spent over a decade perfecting our process. Here&apos;s why contractors,
+            We&apos;ve spent over 6 years perfecting our process. Here&apos;s why contractors,
             architects, and homeowners keep coming back to R&amp;f Projects.
           </p>
         </div>
