@@ -27,8 +27,8 @@ export default function Navbar() {
             <a href="tel:+263785148773" className="hover:text-white transition-colors flex items-center gap-1.5">
               📞 +263 785 148 773
             </a>
-            <a href="mailto:info@rfprojects.co.zw" className="hover:text-white transition-colors">
-              ✉️ info@rfprojects.co.zw
+            <a href="mailto:rfprojects2@gmail.com" className="hover:text-white transition-colors">
+              ✉️ rfprojects2@gmail.com
             </a>
           </div>
         </div>
