@@ -4,11 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { PRODUCTS } from "@/lib/constants";
 
+// 1. Update: params must be a Promise in Next.js 15
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
-// Map product slugs to multiple gallery images
 const PRODUCT_GALLERY: Record<string, string[]> = {
   "aluminium-gates": [
     "/images/gallery/gallery-01.jpeg",
@@ -34,17 +34,24 @@ export async function generateStaticParams() {
   return PRODUCTS.map((p) => ({ slug: p.slug }));
 }
 
+// 2. Update: Await the params Promise before using slug
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const product = PRODUCTS.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const product = PRODUCTS.find((p) => p.slug === slug);
+  
   if (!product) return {};
+  
   return {
     title: `${product.name} | R&f Projects`,
     description: product.shortDescription,
   };
 }
 
-export default function ProductDetailPage({ params }: Props) {
-  const product = PRODUCTS.find((p) => p.slug === params.slug);
+// 3. Update: Make the component async and await the params
+export default async function ProductDetailPage({ params }: Props) {
+  const { slug } = await params;
+  const product = PRODUCTS.find((p) => p.slug === slug);
+  
   if (!product) notFound();
 
   const images = PRODUCT_GALLERY[product.slug] ?? ["/images/gallery/gallery-01.jpeg"];
@@ -186,10 +193,10 @@ export default function ProductDetailPage({ params }: Props) {
                   <span>📞</span> +263 778 808 516
                 </p>
                 <p className="flex items-center gap-2">
-                  <span>✉️</span> rfprojects2@gmail.com
+                  <span>✉️</span> info@rfprojects.co.zw
                 </p>
                 <p className="flex items-center gap-2">
-                  <span>🕐</span> Mon – Sat: 8am – 5pm
+                  <span>🕐</span> Mon – Fri: 8am – 5pm
                 </p>
               </div>
             </div>
