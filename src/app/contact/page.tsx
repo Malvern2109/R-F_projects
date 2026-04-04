@@ -12,22 +12,22 @@ const CONTACT_DETAILS = [
   {
     icon: "📍",
     label: "Visit Us",
-    value: "123 Industrial Road, Harare, Zimbabwe",
+    value: "25 bishop Gaul Avenue Belvedere Harare"
   },
   {
     icon: "📞",
     label: "Call Us",
-    value: "+263 000 000 000",
+    value: "+263 778 808 516",
   },
   {
     icon: "✉️",
     label: "Email Us",
-    value: "info@rfprojects.co.zw",
+    value: "rfprojects2@gmail.com",
   },
   {
     icon: "🕐",
     label: "Working Hours",
-    value: "Monday – Friday: 8am – 5pm",
+    value: "Monday – Saturday: 8am – 5pm",
   },
 ];
 
