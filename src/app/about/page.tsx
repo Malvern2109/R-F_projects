@@ -93,7 +93,7 @@ export default function AboutPage() {
               </span>
             </div>
             <h2 className="text-4xl font-bold text-slate-900 mb-6 leading-tight">
-              10+ Years of Crafting
+              6+ Years of Crafting
               <br />
               <span className="text-blue-600">Aluminium Excellence</span>
             </h2>
